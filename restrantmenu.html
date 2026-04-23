@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Food Menus</title>
+    <style>
+        /* General page layout to center the menus */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Common styles for all menus */
+        .menu {
+            width: 400px;
+            height: 550px;
+            margin: 20px; /* Space between menus */
+            padding: 30px; /* Space inside the menu */
+            border: 8px double #444; /* Required border */
+            box-sizing: border-box;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            border-radius: 10px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2em;
+            line-height: 2;
+        }
+
+        /* Breakfast Menu: Unique background, repeat, and position */
+        .breakfast {
+            background-image: url('https://unsplash.com');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* Lunch Menu: Unique background, repeat, and position */
+        .lunch {
+            background-image: url('https://unsplash.com');
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+
+        /* Dinner Menu: Unique background, repeat, and position */
+        .dinner {
+            background-image: url('https://unsplash.com');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Breakfast Menu -->
+    <div class="menu breakfast">
+        <h2>Breakfast</h2>
+        <ul>
+            <li>Classic Pancakes - $10</li>
+            <li>Avocado Toast - $12</li>
+            <li>Fruit & Yogurt Parfait - $8</li>
+            <li>Freshly Brewed Coffee - $4</li>
+            <li>Orange Juice - $5</li>
+        </ul>
+    </div>
+
+    <!-- Lunch Menu -->
+    <div class="menu lunch">
+        <h2>Lunch</h2>
+        <ul>
+            <li>Grilled Chicken Salad - $14</li>
+            <li>Artisan Sandwich - $13</li>
+            <li>Tomato Basil Soup - $9</li>
+            <li>Iced Lemon Tea - $4</li>
+            <li>Sparkling Water - $3</li>
+        </ul>
+    </div>
+
+    <!-- Dinner Menu -->
+    <div class="menu dinner">
+        <h2>Dinner</h2>
+        <ul>
+            <li>Pan-Seared Salmon - $24</li>
+            <li>Ribeye Steak - $32</li>
+            <li>Vegetarian Pasta - $18</li>
+            <li>Red Wine (Glass) - $12</li>
+            <li>Chocolate Lava Cake - $9</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
